@@ -1,0 +1,69 @@
+/* Global Styles */
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black; /* Make the body background transparent */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Menu Bar Styling */
+.menu-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(26, 26, 26, 0.8); /* Semi-transparent background */
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for background and shadow */
+}
+
+.menu-bar:hover {
+    background-color: rgba(26, 26, 26, 1); /* Solid color on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4); /* Slightly more shadow on hover */
+}
+
+/* Menu List Styling */
+.menu-list {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.menu-list li {
+    margin: 0 20px;
+}
+
+.menu-list li a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px; /* Slightly larger text for readability */
+    padding: 8px 15px;
+    transition: color 0.3s, background-color 0.3s, transform 0.3s ease; /* Smooth transitions for hover effects */
+}
+
+.menu-list li a:hover {
+    background-color: #00bfff; /* Bright accent color for hover */
+    color: #121212;
+    border-radius: 5px;
+    transform: scale(1.1); /* Slight scale effect on hover */
+}
+
+/* Ensure content below the menu is not obscured */
+main {
+    padding-top: 80px; /* Add space for the fixed menu */
+}
+
+/* Optional: Main Content Area Styling */
+.content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white; /* Optional: Slight white overlay for content */
+    border-radius: 8px;
+}

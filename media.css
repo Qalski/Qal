@@ -1,0 +1,148 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Layout */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(pictures/journeybg.jpg);
+    
+    color: #ffffff; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    overflow-x: hidden;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #cecece;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #2980b9; /* Add border to give it structure */
+    padding-bottom: 10px;
+}
+
+/* Table Container */
+.media-container {
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Add space between content blocks */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+/* Table Styling */
+.media-table {
+    width: 100%;
+    border-spacing: 15px;
+    text-align: center;
+}
+
+/* Table Header Styling */
+.media-table th {
+    font-size: 1.6rem;
+    color: #34495e;
+    padding-bottom: 15px;
+    font-weight: 500;
+}
+
+/* Table Cell Styling */
+.media-table td {
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-out;
+    text-align: center;
+    min-width: 250px; /* Prevent cells from shrinking */
+}
+
+/* Hover Effects */
+.media-table td:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.2);
+    background-color: #ecf0f1;
+}
+
+/* Audio Container */
+.audio-container audio {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Video Container */
+.video-container video {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    background-color: #000; /* Ensure video has dark background */
+}
+
+/* Radio Placeholder */
+.radio-container {
+    padding: 20px;
+    background-color: #ecf0f1;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.radio-container p {
+    color: #7f8c8d;
+    font-size: 1.1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.2rem;
+        margin-bottom: 20px;
+    }
+
+    .media-table th {
+        font-size: 1.3rem;
+    }
+
+    .media-table td {
+        font-size: 1.1rem;
+        padding: 15px;
+        min-width: 220px; /* Allow content to fit in smaller spaces */
+    }
+
+    .media-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .media-table {
+        width: 100%;
+    }
+}
+
+
+

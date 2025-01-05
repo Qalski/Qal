@@ -1,0 +1,36 @@
+/* Body Styling for Dark Mode */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Dark background */
+    color: white;
+    height: 100%; /* Allow body to fill the allocated space */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #1a1a1a; /* Dark footer background */
+    color: white; /* Light text */
+    text-align: center;
+    padding: 5px 0; /* Reduced padding to fit in 30px row */
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.5); /* Shadow for pop-up effect */
+    border-radius: 10px 10px 0 0; /* Rounded top corners */
+    font-size: 0.8em; /* Reduced font size for better fit */
+    margin-top: auto; /* Ensures footer stays at the bottom */
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #00bfff; /* Light accent color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ff6f61; /* Change accent color on hover */
+}

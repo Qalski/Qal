@@ -1,0 +1,63 @@
+<html>
+<head>
+    <title>Welcome to My Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Honk&family=Nabla&family=Rubik+Glitch&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="welcomepage.css">
+</head>
+<body>
+    <header>
+        <h1 class="nabla-header">WELCOME TO MY WEBSITE!</h1>
+    </header>
+    <main>
+        <section class="hero">
+            <img src="pictures/lofi.gif" alt="Welcome Image" class="background-gif">
+            <div class="overlay">
+                <br>
+                <h2 class="honk-text">EXPLORE!</h2>
+                <p>Discover MY amazing content and learn new things about me here. Thanks for visiting!</p>
+                <p>OR you can chill here listening to this song and click this link below!</p>
+                <center>
+                <a class="nabla-header" href="https://classic.minecraft.net/" target="_blank">Minecraft</a>
+                </center>
+                <br>
+                <audio controls autoplay>
+                    <source src="audio/sza - kitchen (instrumental).mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div id="clock" class="clock-container"></div>
+        </section>
+    </main>
+</body>
+
+<script>
+    function updateClock() {
+        const clock = document.getElementById("clock");
+        const now = new Date();
+        let hours = now.getHours();
+        const minutes = now.getMinutes().toString().padStart(2, '0');
+        const seconds = now.getSeconds().toString().padStart(2, '0');
+        const ampm = hours >= 12 ? 'PM' : 'AM';
+
+        hours = hours % 12 || 12; // Convert 24-hour format to 12-hour format
+        clock.textContent = `${hours}:${minutes}:${seconds} ${ampm}`;
+    }
+
+    setInterval(updateClock, 1000); // Update the clock every second
+    document.addEventListener("DOMContentLoaded", updateClock); // Initial call
+</script>
+
+
+
+</html>
+
+
+
+
+
+
+
+

@@ -1,0 +1,17 @@
+<html>
+<head>
+    <title>Frame Page</title>
+</head>
+
+<frameset rows="60, *" frameborder="0" border="0">
+    <!-- The menu frame at the top -->
+    <frame src="menupage.html" name="menu" noresize>
+
+    <!-- Main content frames below -->
+    <frameset rows="*, 30" frameborder="0" border="0">
+        <frame src="welcomepage.html" name="main" noresize>
+        <frame src="bottompage.html" name="bottom" noresize scroll="no" style="overflow: hidden;">
+    </frameset>
+</frameset>
+
+</html>

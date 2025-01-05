@@ -1,0 +1,60 @@
+/* General styles for the page */
+body {
+    background-image: url(pictures/arcade.jpg);
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+/* Container for the content */
+.container {
+        max-width: 1200px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: rgba(137, 130, 130, 0.8); 
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    position: relative; /* Allow positioning relative to container */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect when cursor is over the container */
+.container:hover {
+    transform: scale(1.05);  /* Slightly increase the size */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);  /* Increase shadow on hover */
+}
+
+/* Ensure the image fits the container */
+img {
+    max-width: 100%;  /* Ensure the image is responsive */
+    height: auto;
+    border-radius: 8px;  /* Optional: Rounded corners */
+    position: relative;
+    z-index: 10;  /* Ensure the image stays on top */
+}
+
+/* Make sure the map is clickable */
+map {
+    position: relative;
+    z-index: 5;  /* Ensure the map is above other content but below the image */
+}
+
+
+
+
+.honk-p {
+  font-family: "Honk", serif;
+  font-size: 50px;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "MORF" 15,
+    "SHLN" 50;
+}
